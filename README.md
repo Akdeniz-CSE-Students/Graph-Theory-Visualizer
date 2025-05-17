@@ -1,115 +1,120 @@
-Yönergeler
-Dear Students,
+### 📌 README.md
 
-In this homework, you will create a manim animation for one slide* from our slides. If the slide assigned to you does not contain anything to animate, just think of another graph theory idea that you can explain with an animation (maybe something you think missing in the existing slides). Try to make your animations engaging and instructive.
+````markdown
+# 🚀 Graph-Theory-Visualizer
 
-See this presentation for a brief tutorial about how you can use manim library.
-Full link: https://docs.google.com/presentation/d/1LI8rElsAnpLER3t1R0fDr1YK5ngPExwb37BEDazxlTc/edit?usp=sharing 
+This project is a **Graph Theory Visualizer** created using the Manim animation library. It is designed to visually explain basic concepts of graph theory, focusing on graph counting, non-isomorphic graphs, and isomorphism. This project was developed as part of a homework assignment for a Graph Theory course at Akdeniz University.
 
-Submission: Upload 2 things:
-Your code (py file)
-Your animation in mp4 format
+---
 
-*Find which slide is assigned to you in this table:
-Student ID  Slide
-20200808805 2
-20210808005 3
-20210808012 4
-20210808014 5
-20210808016 6
-20210808017 7
-20210808022 8
-20210808024 9
-20210808025 10
-20210808028 11
-20210808031 12
-20210808038 13
-20210808042 14
-20210808043 15
-20210808048 16
-20210808056 17
-20210808067 18
-20210808072 19
-20210808610 20
-20210808614 21
-20220808001 22
-20220808005 23
-20220808006 24
-20220808007 25
-20220808008 26
-20220808010 27
-20220808013 28
-20220808014 29
-20220808016 30
-20220808018 31
-20220808022 32
-20220808023 33
-20220808024 34
-20220808025 35
-20220808026 36
-20220808028 37
-20220808029 38
-20220808032 39
-20220808033 40
-20220808035 41
-20220808036 42
-20220808037 43
-20220808038 44
-20220808041 45
-20220808043 46
-20220808044 47
-20220808045 48
-20220808048 49
-20220808051 50
-20220808052 51
-20220808053 52
-20220808055 53
-20220808057 54
-20220808059 55
-20220808060 56
-20220808061 57
-20220808063 58
-20220808067 59
-20220808069 60
-20220808071 61
-20220808072 62
-20220808073 63
-20220808074 64
-20220808076 65
-20220808504 66
-20220808601 67
-20220808604 68
-20220808606 69
-20220808607 70
-20220808618 71
-20220808619 72
-20220808704 73
-20230808004 74
-20230808010 75
-20230808049 76
-20230808055 77
-20230808061 78
-20230808062 79
-20230808066 80
-20230808075 81
-20230808077 82
-20230808605 83
-20230808611 84
-20230808613 85
-20230808614 86
-20230808615 87
-20230808617 88
-20230808618 89
-20230808620 90
-20230808621 91
-20230808623 92
-20230808703 93
-20240808505 94
-20240808507 95
-20240808508 96
-20240808611 97
-20240808612 98
-20240808613 99
-20240808615 100
-20240808701 101
-20240808702 102 
+## 🌐 Project Overview
+
+This project includes:
+- **Visualizing the concept of simple graphs and counting them.**
+- **Illustrating the concept of isomorphic graphs.**
+- **Animating graph structures to enhance understanding.**
+
+The project currently focuses on:
+- Counting simple graphs for **n=3** and **n=4**.
+- Identifying and explaining isomorphic graphs.
+
+---
+
+## 🚀 How to Run
+
+### ✅ Prerequisites
+- Make sure you have **Manim Community (v0.19)** installed:
+  ```bash
+  pip install manim
+````
+
+* Ensure that **LaTeX (MikTeX)** is installed for mathematical formulas.
+
+### ✅ Running the Animation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Akdeniz-CSE-Students/Graph-Theory-Visualizer.git
+   cd Graph-Theory-Visualizer
+   ```
+
+2. Run the Manim animation:
+
+   ```bash
+   manim -pql graph_counting_n4_test.py CountingGraphsComplete
+   ```
+
+3. Your animation will be created in the `media/videos` directory.
+
+---
+
+## 📚 Understanding the Animation
+
+### 🔹 Part 1: Introduction
+
+* The animation begins with an introduction to the concept of graph counting.
+* It introduces the mathematical formula for calculating the total number of edges in a graph:
+
+  $$
+  B(n, 2) = \frac{n(n - 1)}{2}
+  $$
+
+### 🔹 Part 2: Graphs for n=3
+
+* It displays all 8 possible simple graphs for **n=3**.
+* Isomorphic graphs are faded out for clarity.
+* An isomorphism example is shown with a visual explanation.
+
+### 🔹 Part 3: Graphs for n=4
+
+* It presents the 11 unique non-isomorphic graphs for **n=4** among the 64 possible combinations.
+* This section is designed to clearly show how isomorphism reduces the total number of unique graphs.
+
+---
+
+## 📌 Why This Project?
+
+This project was created as part of a homework assignment for Graph Theory. The goal is to help students understand:
+
+* How simple graphs can be counted.
+* How isomorphic graphs are identified.
+* The concept of non-isomorphic graphs for different values of **n**.
+
+### ✨ Assigned Slide for Student ID: 20220808005
+
+* This project is the visual representation of **Slide 23** in the assigned homework slides.
+
+---
+
+## 🌐 Contributing
+
+If you are a student working on a similar homework, you can:
+
+* Fork this repository.
+* Create your own graph visualizations.
+* Make a pull request with your contribution.
+
+### ✅ Recommended Contribution:
+
+* Create a new file for your slide (e.g., `example.py`).
+* Follow the structure of the existing code.
+* Add a brief description of your animation to the README.
+
+---
+
+## 👤 Author
+
+* **Yahya Efe Kuruçay** - Student ID: 20220808005
+* 📌 [My Website](https://efekurucay.com)
+* 📌 [My GitHub Profile](https://github.com/efekurucay/)
+* 📌 [Akdeniz CSE Students GitHub](https://github.com/Akdeniz-CSE-Students/)
+---
+
+## 📌 License
+
+This project is open-source and available under the MIT License. Feel free to use and modify it for educational purposes. 😊
+
+```
+
+---
