@@ -1,6 +1,6 @@
-### 📌 README.md
 
-````markdown
+
+
 # 🚀 Graph-Theory-Visualizer
 
 This project is a **Graph Theory Visualizer** created using the Manim animation library. It is designed to visually explain basic concepts of graph theory, focusing on graph counting, non-isomorphic graphs, and isomorphism. This project was developed as part of a homework assignment for a Graph Theory course at Akdeniz University.
@@ -25,9 +25,8 @@ The project currently focuses on:
 ### ✅ Prerequisites
 - Make sure you have **Manim Community (v0.19)** installed:
   ```bash
-  pip install manim
-````
-
+  pip install manim ```
+---
 * Ensure that **LaTeX (MikTeX)** is installed for mathematical formulas.
 
 ### ✅ Running the Animation
@@ -38,6 +37,7 @@ The project currently focuses on:
    git clone https://github.com/Akdeniz-CSE-Students/Graph-Theory-Visualizer.git
    cd Graph-Theory-Visualizer
    ```
+
 
 2. Run the Manim animation:
 
@@ -115,6 +115,4 @@ If you are a student working on a similar homework, you can:
 
 This project is open-source and available under the MIT License. Feel free to use and modify it for educational purposes. 😊
 
-```
 
----
