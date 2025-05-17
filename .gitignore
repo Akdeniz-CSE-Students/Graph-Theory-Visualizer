@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+__pycache__/
+.venv/
+media/
+*.log
+*.aux
+*.mp4
+*.png
+*.svg
