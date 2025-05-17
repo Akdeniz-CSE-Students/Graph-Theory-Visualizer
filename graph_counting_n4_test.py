@@ -8,7 +8,7 @@ from manim import *
 
 class CountingGraphsComplete(Scene):
     def construct(self):
-        # 🚀 Introduction Scene 🚀
+        #  Introduction Scene 
         title = Text("Counting Graphs", font_size=48, color=WHITE)
         subtitle = Text("How many different simple graphs can be created?", font_size=32, color=LIGHT_GRAY)
         title.to_edge(UP)
@@ -18,7 +18,7 @@ class CountingGraphsComplete(Scene):
         self.play(FadeIn(subtitle, shift=UP))
         self.wait(1)
 
-        # 🚀 Theoretical Edge Calculation 🚀
+        #  Theoretical Edge Calculation 
         formula = MathTex(r"B(n, 2) = \frac{n(n - 1)}{2}", font_size=44)
         formula.next_to(subtitle, DOWN, buff=0.4)
 
@@ -33,7 +33,7 @@ class CountingGraphsComplete(Scene):
         self.play(FadeOut(subtitle, shift=UP), FadeOut(formula, shift=UP), FadeOut(description, shift=UP))
         self.wait(0.5)
 
-        # 🚀 Non-Isomorphic Graphs for n=3 🚀
+        #  Non-Isomorphic Graphs for n=3 
         n3_title = Text("For n=3", font_size=36).to_edge(UP)
         self.play(Write(n3_title))
 
@@ -53,14 +53,14 @@ class CountingGraphsComplete(Scene):
         self.play(LaggedStart(*[Create(graph) for graph in all_8_graphs_n3], lag_ratio=0.1))
         self.wait(1)
 
-        # 🚀 Fading Out Isomorphic Graphs 🚀
+        #  Fading Out Isomorphic Graphs 
         non_iso_indices_n3 = [0, 1, 4, 7]
         for i, graph in enumerate(all_8_graphs_n3):
             if i not in non_iso_indices_n3:
                 self.play(graph.animate.set_opacity(0.3).set_color(DARK_GRAY), run_time=0.5)
         self.wait(1)
 
-        # 🚀 Isomorphism Explanation 🚀
+        #  Isomorphism Explanation 
         self.play(FadeOut(n3_title))
         self.play(all_8_graphs_n3.animate.shift(UP * 2))
         self.wait(0.5)
@@ -91,10 +91,10 @@ class CountingGraphsComplete(Scene):
         self.play(FadeOut(all_8_graphs_n3), FadeOut(iso_left), FadeOut(iso_right), FadeOut(iso_text))
         self.wait(0.5)
 
-        # 🚀 Continue to n=4 🚀
+        #  Continue to n=4 
         self.create_n4_graphs_section()
 
-        # 🚀 Closing Message 🚀
+        #  Closing Message 
         closing_text = Text("Greetings from Efe...", font_size=30)
         github_text = Text("For more resources, visit: github.com/Akdeniz-CSE-Students/", font_size=24)
         closing_text.to_edge(DOWN, buff=1)
